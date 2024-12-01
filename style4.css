@@ -141,7 +141,8 @@ span{
     gap: 20px;
 }
 #pic img{
-    width: 550px;
+    width: 100%;
+    max-width: 300px;
     height: 400px;
     border:1px solid rgb(23, 23, 168, 0.9);
     border-radius:50%;
@@ -211,7 +212,7 @@ span{
     border-radius:15px ;
 }
 #msg{
-    width:100%;
+    width:30%;
     padding: 10px;
     margin: 15px;
     
