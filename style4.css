@@ -55,7 +55,7 @@ header h1{
     height:600px;
     justify-content: center;
     align-items: center;
-    background:url('pchtml.jpg') no-repeat center/cover;
+    background:url('pchtml.jpg') no-repeat center/cover auto;
 }
 #home::before{
     position: absolute;
