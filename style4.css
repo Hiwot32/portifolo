@@ -53,11 +53,12 @@ header h1{
     display: flex;
     flex-direction: column;
     background-color: rgb(59, 55, 55, 0.5);
-    height:600px;
+    height:auto;
     justify-content: center;
     align-items: center;
     background:url('pchtml.jpg') no-repeat center/cover auto;
     text-align: center;
+    padding-buttom: 50px;
 }
 #home::before{
     position: absolute;
@@ -132,6 +133,7 @@ span{
     margin-bottom:50px;
     color:black;
     text-align: center;
+    margin-top:20px;
 }
 #pic{
     display:flex;
@@ -143,7 +145,7 @@ span{
 #pic img{
     width: 100%;
     max-width: 300px;
-    height: 200px;
+    height: auto;
     border:1px solid rgb(23, 23, 168, 0.9);
     border-radius:50%;
 }
