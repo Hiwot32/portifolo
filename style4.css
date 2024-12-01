@@ -193,6 +193,7 @@ span{
     box-sizing: border-box;
     background-color:black;
     color:white;
+    padding: 20px;
 }
 .form{
     display: flex;
@@ -200,23 +201,26 @@ span{
     box-sizing: border-box;
     align-items: center;
     margin: 20px 0px;
+    gap:15px;
    
 }
 .input{
+    width:100%;
     padding:12px;
     width:30%;
     border-radius:15px ;
 }
 #msg{
-    width:30%;
+    width:100%;
     padding: 10px;
     margin: 15px;
     
 }
 #send{
     padding:8px;
-    width:10%;
+    width:100%;
     margin:30px;
+    max-width: 200px;
 
 }
 #send:hover{
