@@ -53,11 +53,14 @@ header h1{
     display: flex;
     flex-direction: column;
     background-color: rgb(59, 55, 55, 0.5);
-    height:600px;
+    min-height:100hv;
     justify-content: center;
     align-items: center;
     background:url("pchtml.jpg") no-repeat center/cover auto;
     text-align: center;
+    padding:20px;
+    box-sizing: border-box;
+    margin-buttom: 50px;
 }
 #home::before{
     position: absolute;
@@ -128,7 +131,7 @@ span{
     display: flex;
     flex-direction: column;
     box-sizing:border-box;
-    padding: 20px;
+    padding-top: 50px;
     margin-bottom:50px;
     color:black;
     text-align: center;
@@ -243,7 +246,7 @@ span{
         margin:5px 0;
     }
     #home{
-        height: auto;
+        min-height: auto;
         padding:20px;
     }
     .main{
