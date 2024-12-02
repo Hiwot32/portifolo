@@ -7,12 +7,16 @@ html{
     scroll-behavior: smooth;
 }
 header{
+    display:flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(27, 24, 24);
+    padding: 10px 20px;
 }
 header h1{
     color: white;
+    font-size: 24px;
+    text-align:center;
 }
 
 .navbar{
@@ -25,16 +29,19 @@ header h1{
 .navbar ul{
     display: flex;
     list-style-type: none;
-    margin: 20px 0px;
+    margin: 10px 0px;
+    padding: 0;
 }
 .navbar ul li{
     font-weight: bold;
+    margin: 0 10px;
 
 }
 .navbar ul li a{
     text-decoration: none;
     color: rgb(199, 55, 55);
-    padding:  15px 40px;
+    padding:  10px 20px;
+    transition: all 0.3s ease;
 }
 .navbar ul li a:hover{
     background-color: azure;
@@ -51,6 +58,7 @@ header h1{
     justify-content: center;
     align-items: center;
     background:url('pchtml.jpg') no-repeat center/cover;
+    text-align: center;
 }
 #home::before{
     position: absolute;
@@ -74,6 +82,7 @@ header h1{
     border:3px solid black;
     border-radius: 15px;
     border-width: 33%;
+    padding: 20px;
 
 }
 .navbar h1{
@@ -86,18 +95,21 @@ span{
 }
 #home .main p{
     font-size: 25px;
+    margin: 10px 0;
     
 }
 #home .main h2{
     padding-bottom: 10px;
+    margin: 10px 0;
 }
 .btn{
-    padding: 15px 35px;
+    padding: 10px 20px;
     background-color: transparent;
     border: 1px solid purple;
     border-radius:15px;
     outline: none;
-    margin-top: 35px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
 
 }
 .btn:hover{
@@ -109,9 +121,9 @@ span{
     border-radius: 15px;
 }
 .heading{
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
-    margin: 40px 0px;
+    margin: 20px 0px;
 }
 #about{
     background-color: rgb(198, 218, 224);
@@ -121,13 +133,17 @@ span{
     padding: 20px;
     margin-bottom:50px;
     color:black;
+    text-align: center;
 }
 #pic{
     display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 #pic img{
-    width: 550px;
-    height: 400px;
+    width: 100%;
+    height: 300px;
     border:1px solid rgb(23, 23, 168, 0.9);
     border-radius:50%;
 }
@@ -147,14 +163,19 @@ span{
     display: flex;
     flex-direction: column;
     padding: 20px;
+    text-align: center;
 }
 .row{
     display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 .box{
     display: flex;
     flex-direction:column;
-    width:350px;
+    width:100%;
+    max-width: 300px;
     height:450px;
     border: 1px solid black;
     margin:10px;
@@ -162,6 +183,7 @@ span{
     text-align: justify;
     padding:10px;
     border-radius:15px;
+    transition: all 0.3s ease;
 
 }
 .box:hover{
@@ -174,6 +196,7 @@ span{
     box-sizing: border-box;
     background-color:black;
     color:white;
+    padding: 20px;
 }
 .form{
     display: flex;
@@ -181,15 +204,18 @@ span{
     box-sizing: border-box;
     align-items: center;
     margin: 20px 0px;
+    gap:15px;
    
 }
 .input{
-    padding:12px;
-    width:30%;
+    width:100%;
+    max-width: 500px;
+    padding:10px;
     border-radius:15px ;
 }
 #msg{
     width:30%;
+    max-width:500px;
     padding: 10px;
     margin: 15px;
     
@@ -198,10 +224,57 @@ span{
     padding:8px;
     width:10%;
     margin:30px;
+    max-width: 200px;
 
 }
 #send:hover{
     cursor: pointer;
     box-shadow:0 0 10px white;
 }
+@media(max-width: 768){
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .navbar ul{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+    .navbar ul li{
+        margin: 5px 0;
+    }
+    #home{
+        height: auto;
+        padding: 20px;
+    }
+    .main{
+        font-size: 20px;
+        padding: 10px;
+    }
+    #about, #service, #contact{
+        padding: 10px;
+    }
+    .box{
+        width: 100%;
+    }
+    #pic img{
+        max-width: 200px;
+    }
+}
 
+@media(max-width: 480px){
+    .navbar ul li a{
+        padding: 8px 15px;
+    }
+    .heading{
+        font-size: 20px;
+    }
+    .main{
+        font-size: 18px;
+    }
+    #intro h2{
+        font-size: 20px;
+    }
+}
