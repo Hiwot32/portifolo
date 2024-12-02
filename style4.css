@@ -56,7 +56,7 @@ header h1{
     height:600px;
     justify-content: center;
     align-items: center;
-    background:url("https://raw.githubusercontent.com/Hiwot32/portifolo/main/pchtml.jpg") no-repeat center/cover auto;
+    background:url("pchtml.jpg") no-repeat center/cover auto;
     text-align: center;
 }
 #home::before{
