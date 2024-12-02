@@ -62,6 +62,15 @@ header h1{
     box-sizing: border-box;
     margin-buttom: 50px;
 }
+#home::before{
+    position: fixed;
+    top: 0;
+    right:0;
+    height:auto;
+    width:100px;
+    z-index: -1;
+    opacity: .8;
+}
 
 .main{
     color:antiquewhite;
