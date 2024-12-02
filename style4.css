@@ -63,10 +63,10 @@ header h1{
     margin-buttom: 50px;
 }
 #home::before{
-    position: fixed;
+    position: absolute;
     top: 0;
     right:0;
-    height:auto;
+    height:100px;
     width:100px;
     z-index: -1;
     opacity: .8;
