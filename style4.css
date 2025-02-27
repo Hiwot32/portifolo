@@ -251,7 +251,9 @@ span{
      .hamburger {
         display: block;
     }
-
+    .navbar{
+        display:none;
+    }
     .navbar ul{
         flex-direction: column;
         display: none; /* Hide menu by default */
