@@ -251,19 +251,10 @@ span{
         align-items: flex-start;
         padding: 10px;
     }
-    .navbar{
+    .navbar ul{
         display:none;
     }
-    .navbar ul{
-        flex-direction: column;
-        display: none; /* Hide menu by default */
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: rgb(27, 24, 24);
-        padding: 10px;
-        border-radius: 10px;
-    }
+   
     .navbar ul li{
         margin: 5px 0;
     }
