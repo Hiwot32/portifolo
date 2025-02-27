@@ -68,7 +68,7 @@ header h1{
     height:600px;
     justify-content: center;
     align-items: center;
-    background:url('pchtml.jpg') no-repeat center/cover;
+    background:url('pc3.png') no-repeat center/cover;
     text-align: center;
 }
 #home::before{
