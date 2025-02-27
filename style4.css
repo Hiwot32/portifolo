@@ -245,14 +245,11 @@ span{
     cursor: pointer;
     box-shadow:0 0 10px white;
 }
-@media(max-width: 768){
+@media(max-width: 768px){
     header{
         flex-direction: column;
         align-items: flex-start;
         padding: 10px;
-    }
-     .hamburger {
-        display: block;
     }
     .navbar{
         display:none;
