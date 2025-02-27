@@ -246,112 +246,52 @@ span{
     box-shadow:0 0 10px white;
 }
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .navbar {
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .navbar ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
+    .main {
+        position: static; /* Remove absolute positioning */
         text-align: center;
-        background-color: rgb(27, 24, 24);
-        padding: 10px 0;
-    }
-
-    #menu-toggle:checked + .navbar ul {
-        display: flex;
-    }
-
-    .navbar ul li {
-        margin: 5px 0;
+        font-size: 20px;
+        padding: 20px;
+        width: 90%;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.6); /* Optional: Add a background for better readability */
+        border-radius: 10px;
     }
 
     #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: auto;
         padding: 40px 20px;
     }
-
-    .main {
-        font-size: 24px;
-        padding: 15px;
-        text-align: center;
-        position: static;
-        margin-top: 20px;
-    }
-
-    #about,
-    #services,
-    #contact {
-        padding: 15px;
-    }
-
-    .row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .box {
-        width: 90%;
-        max-width: 400px;
-    }
-
+    
     #pic img {
-        max-width: 100%;
+        width: 80%; /* Make the image responsive */
+        max-width: 250px;
         height: auto;
     }
 
-    .input,
-    #msg {
-        width: 90%;
-    }
-
-    #send {
-        width: 50%;
+    #home .main p, 
+    #home .main h2 {
+        font-size: 18px;
     }
 }
 
 @media (max-width: 480px) {
-    .navbar ul li a {
-        padding: 8px 12px;
-    }
-
-    .heading {
-        font-size: 20px;
-    }
-
     .main {
         font-size: 18px;
-    }
-
-    #intro h2 {
-        font-size: 20px;
-    }
-
-    .box {
+        padding: 15px;
         width: 100%;
     }
 
-    .input,
-    #msg {
-        width: 100%;
+    #pic img {
+        width: 90%;
+        max-width: 200px;
     }
 
-    #send {
-        width: 70%;
+    #home .main p, 
+    #home .main h2 {
+        font-size: 16px;
     }
 }
