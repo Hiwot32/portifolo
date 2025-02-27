@@ -142,16 +142,15 @@ span{
     flex-direction: column;
     box-sizing:border-box;
     padding: 20px;
-    margin-bottom:50px;
     color:black;
     text-align: center;
+    margin:0 auto;
 }
 #pic{
     display:flex;
     justify-content: center;
     width:200px;
     height:250px;
-    margin:0 auto;
 }
 #pic img{
     max-width: 100%;
