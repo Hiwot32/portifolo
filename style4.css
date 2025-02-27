@@ -162,6 +162,7 @@ span{
     flex-direction: column;
     text-align: justify;
     padding: 10px;
+    margin:0 auto;
 }
 #intro h2{
     font-size: 25px;
