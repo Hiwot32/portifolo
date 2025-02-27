@@ -149,8 +149,8 @@ span{
 #pic{
     display:flex;
     justify-content: center;
-    width:200px;
-    height:250px;
+    width:300px;
+    height:350px;
 }
 #pic img{
     max-width: 100%;
@@ -162,7 +162,6 @@ span{
     flex-direction: column;
     text-align: justify;
     padding: 10px;
-    margin:0 auto;
 }
 #intro h2{
     font-size: 25px;
