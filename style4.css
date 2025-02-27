@@ -149,13 +149,12 @@ span{
 #pic{
     display:flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    width:400px;
+    height:400px;
 }
 #pic img{
     max-width: 100%;
     border:1px solid rgb(23, 23, 168, 0.9);
-    border-radius:60%;
 }
 #intro{
     
