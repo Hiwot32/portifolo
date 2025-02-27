@@ -246,7 +246,7 @@ span{
     box-shadow:0 0 10px white;
 }
 @media (max-width: 768px) {
-    .navbar ul{
+    .navbar{
         display:none;
     }
     .main {
