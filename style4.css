@@ -149,8 +149,8 @@ span{
 #pic{
     display:flex;
     justify-content: center;
-    width:400px;
-    height:400px;
+    width:200px;
+    height:250px;
 }
 #pic img{
     max-width: 100%;
