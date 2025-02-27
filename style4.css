@@ -146,6 +146,10 @@ span{
     text-align: center;
     margin:0 auto;
 }
+.about-me{
+    padding-left:20px;
+    margin:0 10px;
+}
 #pic{
     display:flex;
     justify-content: center;
