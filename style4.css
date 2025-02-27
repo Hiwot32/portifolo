@@ -245,53 +245,113 @@ span{
     cursor: pointer;
     box-shadow:0 0 10px white;
 }
-@media(max-width: 768px){
-    header{
+@media (max-width: 768px) {
+    header {
         flex-direction: column;
         align-items: flex-start;
         padding: 10px;
     }
-    .navbar ul{
-        display:none;
+
+    .navbar {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
     }
-   
-    .navbar ul li{
-        margin: 5px 0;
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
     }
-   
-      #menu-toggle:checked + .navbar ul {
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(27, 24, 24);
+        padding: 10px 0;
+    }
+
+    #menu-toggle:checked + .navbar ul {
         display: flex;
     }
-    #home{
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    #home {
         height: auto;
-        padding: 20px;
+        padding: 40px 20px;
     }
-    .main{
-        font-size: 20px;
-        padding: 10px;
+
+    .main {
+        font-size: 24px;
+        padding: 15px;
+        text-align: center;
+        position: static;
+        margin-top: 20px;
     }
-    #about, #service, #contact{
-        padding: 10px;
+
+    #about,
+    #services,
+    #contact {
+        padding: 15px;
     }
-    .box{
-        width: 100%;
+
+    .row {
+        flex-direction: column;
+        align-items: center;
     }
-    #pic img{
-        max-width: 200px;
+
+    .box {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    #pic img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .input,
+    #msg {
+        width: 90%;
+    }
+
+    #send {
+        width: 50%;
     }
 }
 
-@media(max-width: 480px){
-    .navbar ul li a{
-        padding: 8px 15px;
+@media (max-width: 480px) {
+    .navbar ul li a {
+        padding: 8px 12px;
     }
-    .heading{
+
+    .heading {
         font-size: 20px;
     }
-    .main{
+
+    .main {
         font-size: 18px;
     }
-    #intro h2{
+
+    #intro h2 {
         font-size: 20px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .input,
+    #msg {
+        width: 100%;
+    }
+
+    #send {
+        width: 70%;
     }
 }
